@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quiénes Somos? - AutoPartes Pro</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <style>
+        .about-section {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .about-section h3 {
+            color: var(--primary-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        .about-section:first-of-type h3 {
+            margin-top: 0;
+        }
+        .about-section p {
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .team-member {
+            text-align: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+        .team-member-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .team-member h4 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .value-card {
+            background-color: #f0f7ff;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid var(--primary-color);
+        }
+        .value-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <img src="../assets/logo.svg" alt="Logo">
+                <span>AutoPartes Pro</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li><a href="productos.html" class="nav-link">Productos</a></li>
+                <li><a href="quienes-somos.html" class="nav-link active">¿Quiénes Somos?</a></li>
+                <li><a href="contactanos.html" class="nav-link">Contactanos</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="carrito.html" class="cart-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section>
+            <h2>¿Quiénes Somos?</h2>
+
+            <div class="about-section">
+                <h3>Nuestra Historia</h3>
+                <p>
+                    AutoPartes Pro nació en 2015 con una visión clara: proporcionar autopartes de calidad a precios accesibles.
+                    Comenzamos como un pequeño taller local y hemos crecido hasta convertirse en una de las tiendas en línea 
+                    más confiables en el sector automotriz.
+                </p>
+                <p>
+                    A lo largo de los años, hemos construido relaciones sólidas con fabricantes líderes de autopartes de todo 
+                    el mundo, lo que nos permite ofrecer productos auténticos y de garantía.
+                </p>
+            </div>
+
+            <div class="about-section">
+                <h3>Nuestra Misión</h3>
+                <p>
+                    Nuestra misión es ser el proveedor de autopartes más confiable y accesible para todos nuestros clientes, 
+                    ofreciendo productos de calidad, servicio excepcional y precios competitivos. Nos comprometemos a hacer 
+                    el mantenimiento automotriz más fácil y asequible para todos.
+                </p>
+            </div>
+
+            <div class="about-section">
+                <h3>Nuestros Valores</h3>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <h4>🎯 Calidad</h4>
+                        <p>Todos nuestros productos son auténticos y cumplen con los más altos estándares de calidad.</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>💰 Transparencia</h4>
+                        <p>Precios justos sin sorpresas. Lo que ves es lo que pagas.</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>🚀 Innovación</h4>
+                        <p>Estamos constantemente mejorando nuestros servicios y tecnología.</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>👥 Servicio al Cliente</h4>
+                        <p>Tu satisfacción es nuestro éxito. Estamos aquí para ayudarte.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-section">
+                <h3>Nuestro Equipo</h3>
+                <p>Contamos con un equipo profesional y apasionado dedicado a brindar la mejor experiencia:</p>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="team-member-icon">👨‍💼</div>
+                        <h4>Gerencia</h4>
+                        <p>Líderes con experiencia en la industria automotriz</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-member-icon">👨‍🔧</div>
+                        <h4>Técnicos</h4>
+                        <p>Especialistas que conocen cada detalle de nuestros productos</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-member-icon">📞</div>
+                        <h4>Servicio al Cliente</h4>
+                        <p>Disponibles para resolver todas tus dudas y consultas</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-section">
+                <h3>Por Qué Elegirnos</h3>
+                <ul style="list-style-position: inside; line-height: 2;">
+                    <li>✅ Más de 8 años en el mercado</li>
+                    <li>✅ Más de 50,000 clientes satisfechos</li>
+                    <li>✅ Amplio catálogo de más de 10,000 productos</li>
+                    <li>✅ Envíos rápidos y seguros a todo el país</li>
+                    <li>✅ Garantía de satisfacción de 30 días</li>
+                    <li>✅ Soporte técnico experto disponible</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>AutoPartes Pro</h4>
+                <p>Tu tienda confiable de autopartes en línea</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="quienes-somos.html">¿Quiénes Somos?</a></li>
+                    <li><a href="contactanos.html">Contactanos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>📞 +1 (555) 123-4567</p>
+                <p>📧 info@autopartespro.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociales</h4>
+                <div class="social-links">
+                    <a href="#" title="Facebook">f</a>
+                    <a href="#" title="Instagram">📷</a>
+                    <a href="#" title="Twitter">𝕏</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AutoPartes Pro. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/navbar.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+</html>
