@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoPartes Pro - Tu tienda de autopartes confiable</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <img src="assets/logo.svg" alt="Logo">
+                <span>AutoPartes Pro</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                <li><a href="pages/productos.html" class="nav-link">Productos</a></li>
+                <li><a href="pages/quienes-somos.html" class="nav-link">¿Quiénes Somos?</a></li>
+                <li><a href="pages/contactanos.html" class="nav-link">Contactanos</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="pages/carrito.html" class="cart-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Las Mejores Autopartes a los Mejores Precios</h1>
+            <p>Tu tienda confiable para todas tus necesidades automotrices</p>
+            <a href="pages/productos.html" class="btn btn-primary">Explorar Productos</a>
+        </div>
+        <div class="hero-image">
+            <img src="assets/hero-car.png" alt="Auto">
+        </div>
+    </section>
+
+    <!-- Sección de Características -->
+    <section class="features">
+        <div class="container">
+            <h2>¿Por qué elegirnos?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Envío Rápido</h3>
+                    <p>Entrega en 24-48 horas a todo el país</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3>Calidad Garantizada</h3>
+                    <p>Productos de marcas reconocidas y confiables</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💳</div>
+                    <h3>Pago Seguro</h3>
+                    <p>Múltiples métodos de pago seguros</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Garantía de Satisfacción</h3>
+                    <p>30 días para cambios o devoluciones</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorías Destacadas -->
+    <section class="categories">
+        <div class="container">
+            <h2>Categorías Populares</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="assets/categories/motores.jpg" alt="Motores">
+                    <h3>Motores y Componentes</h3>
+                </div>
+                <div class="category-card">
+                    <img src="assets/categories/frenos.jpg" alt="Frenos">
+                    <h3>Frenos</h3>
+                </div>
+                <div class="category-card">
+                    <img src="assets/categories/suspension.jpg" alt="Suspensión">
+                    <h3>Suspensión</h3>
+                </div>
+                <div class="category-card">
+                    <img src="assets/categories/electricos.jpg" alt="Eléctricos">
+                    <h3>Componentes Eléctricos</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>AutoPartes Pro</h4>
+                <p>Tu tienda confiable de autopartes en línea</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="pages/productos.html">Productos</a></li>
+                    <li><a href="pages/quienes-somos.html">¿Quiénes Somos?</a></li>
+                    <li><a href="pages/contactanos.html">Contactanos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>📞 +1 (555) 123-4567</p>
+                <p>📧 info@autopartespro.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociales</h4>
+                <div class="social-links">
+                    <a href="#" title="Facebook">f</a>
+                    <a href="#" title="Instagram">📷</a>
+                    <a href="#" title="Twitter">𝕏</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AutoPartes Pro. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
